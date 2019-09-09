@@ -31,6 +31,8 @@ body {
 	}
 } */
 
+/* Footer */
+
 p {
 	line-height: 1em;
 	font-size: 20px;
@@ -45,32 +47,6 @@ p {
 .email a {
 	color: white !important;
 }
-
-/* .container-1 {
-	height: 30vh;
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-end;
-
-	margin: 0px 10px;
-}
-
-.container-2 {
-
-	height: 40vh;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-
-	margin: 0px 20px;
-}
-.container-3 {
-
-	height: 20vh;
-	text-align: center;
-
-	margin: 0px 10px;
-} */
 
 #container {
 	min-height: 100%;
@@ -183,6 +159,8 @@ p {
 	background-image: linear-gradient(to right, #f95d50, #b64ce2, #2bc6fe);
 }
 
+/* Logo */
+
 .logo {
 	display: flex;
 	position: absolute;
@@ -220,10 +198,12 @@ p {
 
 .image:hover::before {
 	transform: translate(-25px, -5px);
+	-ms-transform: none !important;
 }
 
 .image:hover::after {
 	transform: translate(25px, 5px);
+	-ms-transform: none !important;
 }
 
 @media screen and (min-width: 1500px) {
@@ -235,7 +215,6 @@ p {
 }
 
 /* Phone compatibility */
-
 /* social media icons */
 
 @media screen and (max-width: 500px) {
@@ -251,14 +230,23 @@ p {
 	}
 }
 
-/* Navigation Bar */
-nav {
-	margin: 0px;
-	padding: 0px;
-	display: flex !important;
-	justify-content: space-around;
-	align-items: center;
-	min-height: 8vh;
-	box-sizing: border-box;
-	background-color: black;
+/* Support for IE */
+/* IE 10 & 11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.image:hover::before {
+		transform: translate(0px, 0px);
+	}
+	.image:hover::after {
+		transform: translate(0px, 0px);
+	}
+}
+/* Edge 12 */
+@supports (-ms-ime-align: auto) {
+	.image:hover::before {
+		transform: translate(0px, 0px);
+	}
+
+	.image:hover::after {
+		transform: translate(0px, 0px);
+	}
 }
