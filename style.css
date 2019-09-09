@@ -130,7 +130,7 @@ p {
 }
 
 .social ul li a:hover .fa {
-	color: rgb(235, 235, 235);
+	color: white;
 	transform: rotateY(360deg);
 }
 
