@@ -250,3 +250,24 @@ p {
 		transform: translate(0px, 0px);
 	}
 }
+
+/* Support for mobile landscape view */
+@media screen and (orientation: landscape) and (min-device-width: 600px) and (max-device-width: 900px) {
+	.image {
+		width: 280px;
+		height: 190px;
+	}
+	.logo {
+		top: 40%;
+	}
+	.social ul li a {
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		line-height: 33px;
+		font-size: 23px;
+	}
+	.social ul {
+		top: 70%;
+	}
+}
