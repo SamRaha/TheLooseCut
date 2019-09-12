@@ -12,7 +12,8 @@ body {
 	overflow: hidden;
 	overflow-x: hidden;
 	height: 100%;
-	background-image: url("./assets/BackgroundHD.jpg");
+	background-color: black;
+	/* background-image: url("./assets/BackgroundHD.jpg"); */
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
@@ -23,7 +24,7 @@ body {
 }
 
 #container {
-	box-shadow: inset 0px 0px 100px 80px rgba(0, 0, 0, 0.75);
+	box-shadow: inset 0px 0px 50px 50px rgba(0, 0, 0, 0.4);
 }
 /* @media screen and (min-width: 1500px) {
 	#container {W
@@ -39,7 +40,7 @@ p {
 	color: white;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 	.text-bottom {
 		font-size: 16px;
 	}
@@ -214,19 +215,29 @@ p {
 	}
 }
 
-/* Phone compatibility */
+/* Mobile compatibility */
 /* social media icons */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 	.social ul li {
 		margin: -4px;
 	}
 	.social ul li a {
-		width: 45px;
-		height: 45px;
+		width: 40px;
+		height: 40px;
 		text-align: center;
-		line-height: 39px;
-		font-size: 25px;
+		line-height: 33px;
+		font-size: 23px;
+	}
+	.image {
+		width: 230px;
+		height: 155px;
+	}
+	.logo {
+		top: 15%;
+	}
+	p {
+		font-size: 15px;
 	}
 }
 
@@ -254,11 +265,11 @@ p {
 /* Support for mobile landscape view */
 @media screen and (orientation: landscape) and (min-device-width: 600px) and (max-device-width: 900px) {
 	.image {
-		width: 280px;
-		height: 190px;
+		width: 230px;
+		height: 155px;
 	}
 	.logo {
-		top: 40%;
+		top: 25%;
 	}
 	.social ul li a {
 		width: 40px;
@@ -270,4 +281,24 @@ p {
 	.social ul {
 		top: 70%;
 	}
+	p {
+		font-size: 15px;
+	}
+}
+
+/* Body for the background carousel */
+body {
+	border: 0.1vh solid black;
+	background-color: black;
+	-webkit-transition: all 1.2s linear;
+	-moz-transition: all 1.2s linear;
+	-ms-transition: all 1.2s linear;
+	-o-transition: all 1.2s linear;
+	transition: all 1.2s linear;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: black;
+	height: 100%;
+	width: 100%;
 }
