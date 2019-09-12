@@ -49,12 +49,6 @@ p {
 	color: white !important;
 }
 
-#container {
-	/* min-height: 100vh; */
-	height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
-	height: calc(var(--vh, 1vh) * 100);
-}
-
 #main {
 	overflow: auto;
 	/* padding-bottom: 100px; */
@@ -308,11 +302,18 @@ body {
 	background-repeat: no-repeat;
 	background-position: center center;
 	color: black;
-	height: calc(var(--vh, 1vh) * 100);
+	/* height: calc(var(--vh, 1vh) * 100); */
+	min-height: 100%;
 	width: 100%;
 	box-shadow: inset 0px 0px 50px 50px rgba(0, 0, 0, 0.4);
 	overflow: hidden;
 	position: fixed;
 	/* display: grid;
 	grid-template-rows: 1fr auto; */
+}
+
+#container {
+	/* min-height: 100vh; */
+	height: 100%; /* Use vh as a fallback for browsers that do not support Custom Properties */
+	/* height: calc(var(--vh, 1vh) * 100); */
 }
