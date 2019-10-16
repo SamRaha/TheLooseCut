@@ -397,17 +397,11 @@ p {
 		font-size: 15px;
 	}
 	.merch {
-		position: absolute;
 		top: 15%;
 		left: 15%;
-		transform: translate(-50%, -50%);
-		letter-spacing: 3.3px;
 	}
 	.merch a {
-		font-size: 45px;
-		font-weight: 600;
-		color: white;
-		text-shadow: 2px 2px 4px #000000;
+		font-size: 30px;
 	}
 }
 
