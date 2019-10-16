@@ -109,6 +109,7 @@ p {
 
 */
 /* BACKGROUND COLOURS OF SOCIAL ICONS - COLOURED  */
+
 .social ul li a:hover {
 	border: 2px solid rgb(255, 255, 255);
 	transition: 0.5s;
@@ -148,7 +149,7 @@ p {
 	background: -webkit-linear-gradient(-45deg, #ff6932 10%, #d600fc 50%, #3cf2fc 80%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(-45deg, #ff6932 20%, #d600fc 50%, #3cf2fc 80%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(-45deg, #ff6932 20%, #d600fc 50%, #3cf2fc 80%); /* IE10+ */
-	background: linear-gradient(135deg, #ff6932 20%, #d600fc 50%, #3cf2fc 80%); /* W3C */
+	background: linear-gradient(135deg, #ff6932 20%, #d600fc 50%, #3cf2fc 80%);
 	background-size: cover;
 }
 
@@ -394,6 +395,19 @@ p {
 	}
 	p {
 		font-size: 15px;
+	}
+	.merch {
+		position: absolute;
+		top: 15%;
+		left: 15%;
+		transform: translate(-50%, -50%);
+		letter-spacing: 3.3px;
+	}
+	.merch a {
+		font-size: 45px;
+		font-weight: 600;
+		color: white;
+		text-shadow: 2px 2px 4px #000000;
 	}
 }
 
