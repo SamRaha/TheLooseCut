@@ -83,17 +83,17 @@ function easy_background(selector, a1, a2, b1, b2, c1, c2, d1, d2, e1, e2, f1, f
 
 easy_background(
 	'body',
-	70000,
+	9000,
 	'./assets/background7.jpg',
-	70000,
+	7000,
 	'./assets/background11.jpg',
-	70000,
+	7000,
 	'./assets/background9.jpg',
-	70000,
+	7000,
 	'./assets/background8.jpg',
-	70000,
+	7000,
 	'./assets/background12.jpg',
-	70000,
+	7000,
 	'./assets/background10.jpg'
 );
 
