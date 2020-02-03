@@ -1,0 +1,435 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Barlow', sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	overflow: hidden;
+	overflow-x: hidden;
+	height: 100%;
+	background-color: black;
+	/* background-image: url("./assets/BackgroundHD.jpg"); */
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+}
+
+/* #container {
+	box-shadow: inset 0px 0px 50px 50px rgba(0, 0, 0, 0.4);
+} */
+/* @media screen and (min-width: 1500px) {
+	#container {W
+		box-shadow: inset 0px 0px 100px 90px rgba(0, 0, 0, 0.75);
+	}
+} */
+
+/* Footer */
+
+p {
+	line-height: 1em;
+	font-size: 20px;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+@media screen and (max-width: 600px) {
+	.text-bottom {
+		font-size: 16px;
+	}
+}
+.email a {
+	color: white !important;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+#main {
+	overflow: auto;
+	/* padding-bottom: 100px; */
+}
+
+#footer {
+	position: relative;
+	height: 100px;
+	margin-top: -70px;
+	clear: both;
+	text-align: center;
+	letter-spacing: 3px;
+	z-index: 0;
+}
+
+/* #footer {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	
+} */
+
+/* social media icons */
+
+.social ul {
+	display: flex;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.social ul li {
+	list-style: none;
+}
+
+.social ul li a {
+	width: 55px;
+	height: 55px;
+	background: rgba(255, 255, 255, 0.9);
+	/* background: url(./assets/socialwhite2.jpg); */
+	background-size: 125px 125px;
+	text-align: center;
+	line-height: 47px;
+	font-size: 30px;
+	margin: 0 10px;
+	display: block;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid rgb(20, 20, 20);
+	z-index: 1;
+}
+
+/* TEST STARTS HERE 
+
+
+*/
+/* BACKGROUND COLOURS OF SOCIAL ICONS - COLOURED  */
+
+.social ul li a:hover {
+	border: 2px solid rgb(255, 255, 255);
+	transition: 0.5s;
+}
+.social ul li:nth-child(1) a {
+	background: #1877f2;
+}
+
+.social ul li:nth-child(2) a {
+	background: #1da1f2;
+}
+
+.social ul li:nth-child(3) a {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+	background-size: cover;
+}
+
+.social ul li:nth-child(4) a {
+	background: #ff0000;
+}
+
+.social ul li:nth-child(5) a {
+	background: #1ed760;
+}
+.social ul li:nth-child(6) a {
+	background-image: linear-gradient(to right, #f95d50, #b64ce2, #2bc6fe);
+	background: #ff6932; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #ff6932 20%, #d600fc 50%, #3cf2fc 80%); /* FF3.6+ */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right bottom,
+		color-stop(20%, #ff6932),
+		color-stop(50%, #d600fc),
+		color-stop(80%, #3cf2fc)
+	); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #ff6932 10%, #d600fc 50%, #3cf2fc 80%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #ff6932 20%, #d600fc 50%, #3cf2fc 80%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #ff6932 20%, #d600fc 50%, #3cf2fc 80%); /* IE10+ */
+	background: linear-gradient(135deg, #ff6932 20%, #d600fc 50%, #3cf2fc 80%);
+	background-size: cover;
+}
+
+/* TEST ENDS HERE
+
+
+*/
+
+.social ul li a .fa {
+	position: relative;
+	color: #262626;
+	transition: .5s;
+	z-index: 3;
+}
+
+.social ul li a:hover .fa {
+	color: white;
+	transform: rotateY(360deg);
+}
+
+.social ul li a:before {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #f00;
+	background: rgba(255, 255, 255, 0);
+	transition: .5s;
+	z-index: 2;
+}
+
+.social ul li a:hover:before {
+	top: 0;
+}
+
+.social ul li:nth-child(1) a:before {
+	background: #1877f2;
+
+	/* background: radial-gradient(
+				circle at 0% 50%,
+				rgba(96, 16, 48, 0) 9px,
+				rgb(0, 0, 0) 10px,
+				rgba(80, 0, 32, 0.144) 11px
+			)
+			0px 10px,
+		radial-gradient(at 100% 100%, rgba(0, 0, 0, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px), rgb(204, 167, 0);
+	background-size: 20px 20px; */
+}
+
+.social ul li:nth-child(2) a:before {
+	background: #1da1f2;
+}
+
+.social ul li:nth-child(3) a:before {
+	/* background-image: linear-gradient(to right, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%); */
+}
+
+.social ul li:nth-child(4) a:before {
+	background: #ff0000;
+}
+
+.social ul li:nth-child(5) a:before {
+	background: #1ed760;
+}
+.social ul li:nth-child(6) a:before {
+	/* background-image: linear-gradient(to right, #f95d50, #b64ce2, #2bc6fe); */
+}
+
+/* MERCH */
+
+.merch {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	letter-spacing: 3.3px;
+}
+.merch a {
+	font-size: 45px;
+	font-weight: 600;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+}
+.merch a:hover {
+	color: rgba(255, 255, 255, 0.966);
+	text-decoration: none;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.merch a::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	height: 1em;
+	width: 100%;
+	border-bottom: 2px solid;
+	margin-top: 15px;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0, 1);
+	transform: scale(0, 1);
+	color: rgb(255, 255, 255);
+}
+
+.merch a:hover:after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/* Mobile compatibility */
+@media screen and (max-width: 600px) {
+	.merch a {
+		font-size: 35px;
+	}
+}
+
+/* Logo */
+
+.logo {
+	display: flex;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.image {
+	width: 340px;
+	height: 230px;
+	background-image: url(./assets/Logo.png);
+	background-size: 0;
+	position: relative;
+}
+.image:before,
+.image:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: inherit;
+	background-size: cover;
+	transition: 1s;
+}
+.image:before {
+	clip-path: polygon(0 0, 32% 0, 32% 19%, 97% 100%, 0 100%);
+}
+
+.image:after {
+	clip-path: polygon(100% 0, 32% 0, 32% 19%, 97% 100%);
+}
+
+.image:hover::before {
+	transform: translate(-25px, -5px);
+	-ms-transform: none !important;
+}
+
+.image:hover::after {
+	transform: translate(25px, 5px);
+	-ms-transform: none !important;
+}
+
+@media screen and (min-width: 1500px) {
+	.image {
+		width: 400px;
+		height: 270px;
+		top: 40px;
+	}
+}
+
+/* Mobile compatibility */
+/* social media icons */
+
+@media screen and (max-width: 600px) {
+	.social ul li {
+		margin: -4px;
+	}
+	.social ul li a {
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		line-height: 33px;
+		font-size: 23px;
+	}
+	.image {
+		width: 230px;
+		height: 155px;
+	}
+	.logo {
+		top: 15%;
+	}
+	p {
+		font-size: 15px;
+	}
+}
+
+/* Support for IE */
+/* IE 10 & 11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.image:hover::before {
+		transform: translate(0px, 0px);
+	}
+	.image:hover::after {
+		transform: translate(0px, 0px);
+	}
+}
+/* Edge 12 */
+@supports (-ms-ime-align: auto) {
+	.image:hover::before {
+		transform: translate(0px, 0px);
+	}
+
+	.image:hover::after {
+		transform: translate(0px, 0px);
+	}
+}
+
+/* Support for mobile landscape view */
+@media screen and (orientation: landscape) and (min-device-width: 600px) and (max-device-width: 900px) {
+	.image {
+		width: 230px;
+		height: 155px;
+	}
+	.logo {
+		top: 25%;
+	}
+	.social ul li a {
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		line-height: 33px;
+		font-size: 23px;
+	}
+
+	.social ul {
+		top: 60%;
+	}
+	p {
+		font-size: 15px;
+	}
+	.merch {
+		top: 15%;
+		left: 15%;
+	}
+	.merch a {
+		font-size: 30px;
+	}
+}
+
+/* Body for the background carousel */
+body {
+	/* border: 0.01vh solid black; */
+	background-color: black;
+	-webkit-transition: all 1.2s linear;
+	-moz-transition: all 1.2s linear;
+	-ms-transition: all 1.2s linear;
+	-o-transition: all 1.2s linear;
+	transition: all 1.2s linear;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: black;
+	/* height: calc(var(--vh, 1vh) * 100); */
+	min-height: 100%;
+	width: 100%;
+	box-shadow: inset 0px 0px 50px 50px rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+	position: fixed;
+	/* display: grid;
+	grid-template-rows: 1fr auto; */
+}
+
+#container {
+	/* min-height: 100vh; */
+	height: 100%; /* Use vh as a fallback for browsers that do not support Custom Properties */
+	/* height: calc(var(--vh, 1vh) * 100); */
+}
