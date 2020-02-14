@@ -55,15 +55,20 @@ p {
 	overflow: auto;
 	/* padding-bottom: 100px; */
 }
+/* margin-top: -70px before */
 
 #footer {
 	position: relative;
 	height: 100px;
-	margin-top: -70px;
+	margin-top: -100px;
 	clear: both;
 	text-align: center;
 	letter-spacing: 3px;
 	z-index: 0;
+}
+
+.management-hide {
+	color: rgba(255, 255, 255, 0.639);
 }
 
 /* #footer {
@@ -269,6 +274,15 @@ p {
 	.merch a {
 		font-size: 35px;
 	}
+	.management {
+		padding: 0 40px 0 40px;
+	}
+	.management-hide {
+		display: none;
+	}
+	#footer {
+		margin-top: -130px;
+	}
 }
 
 /* Logo */
@@ -349,6 +363,9 @@ p {
 	}
 	p {
 		font-size: 15px;
+	}
+	.social ul {
+		top: 75%;
 	}
 }
 
