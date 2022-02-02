@@ -6,6 +6,7 @@
 
 html {
     height: 100%;
+    background-color: black;
 }
 
 body {
@@ -62,6 +63,7 @@ p {
 
 #main {
     overflow: auto;
+    background-color: black;
     /* padding-bottom: 100px; */
 }
 /* margin-top: -70px before */
@@ -453,4 +455,5 @@ body {
     /* min-height: 100vh; */
     height: 100%; /* Use vh as a fallback for browsers that do not support Custom Properties */
     /* height: calc(var(--vh, 1vh) * 100); */
+    background-color: black;
 }
