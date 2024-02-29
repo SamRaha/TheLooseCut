@@ -15,12 +15,24 @@ body {
   width: 100%;
   background-image: url("./assets/theloosecut-tour.jpeg");
   background-repeat: no-repeat;
-  background-position: center 40%; /* Adjusted this line */
+  background-position: center 40%;
   text-align: center;
   position: relative;
   margin: 0 auto;
-  background-color: black!important; 
+  background-color: black !important;
+
+  /* Removed the background-size: cover; from here */
 }
+
+/* Media query for devices with a width of 768 pixels or less */
+@media (max-width: 768px) {
+  body {
+    background-size: 138%; /* Reduces the background size to 50% for mobile devices */
+    background-position: 60% 40%;
+  }
+}
+
+
 
 /* #container {
 	box-shadow: inset 0px 0px 50px 50px rgba(0, 0, 0, 0.4);
@@ -150,7 +162,7 @@ p {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
   color: white;
   gap: 70px;
   width: 100%;
@@ -267,7 +279,7 @@ p {
     width: 40px;
     height: 40px;
     text-align: center;
-    line-height: 35px;
+    line-height: 36px;
     font-size: 23px;
   }
   .image {
@@ -323,7 +335,7 @@ p {
     width: 40px;
     height: 40px;
     text-align: center;
-    line-height: 35px;
+    line-height: 36px;
     font-size: 23px;
   }
   .social ul {
